@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <script type="module" src="./assets/js/index.js" defer></script>
+  <title>Calendário de aniversários</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Aniversários</h1>
+    </header>
+
+    <main>
+      <div class="form-group">
+        <form id="form">
+          <label for="nameInput">
+            Nome
+            <input type="text" name="name" id="nameInput" minlength="3" maxlength="120" pattern="[A-Za-z ]+" required />
+          </label>
+
+          <label for="dateInput">
+            Data de Nascimento
+            <input type="date" name="name" id="dateInput" min="1900-01-01" max="2100-12-31" required />
+          </label>
+
+          <input type="submit" value="Salvar" id="btnInput" />
+        </form>
+      </div>
+      
+      <div class="table-group">
+        <table id="tabelaDOM">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nome</th>
+              <th scope="col">Data de Aniversário</th>
+              <th scope="col">Ações</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
